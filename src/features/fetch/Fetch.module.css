@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@500&display=swap');
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.dropdownContainer {
+  width: 80%;
+  margin: 3% auto;
+}
+
+.buttonStandard {
+  width: 30%;
+}
+
+.selectSbs {
+  display: flex;
+}
+
+.topDrop {
+  width: 60%;
+  border-radius: 9px;
+  background-color: #ffeee1;
+}
+
+.pathHeader {
+  font-size: 2vmax;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #ffeee1;
+  text-align: center;
+}
+
+.loading-ring {
+  max-height: 40px;
+}
+
+.selectSbs {
+  display: flex;
+  margin: 2% auto;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.topDrop {
+  flex-basis: 80%;
+  border-radius: 9px;
+}
