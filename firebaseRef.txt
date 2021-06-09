@@ -1,0 +1,31 @@
+function fireTest() {
+  const messageRef = fire
+    .database()
+    .ref('messages')
+    .orderByKey()
+    .limitToLast(100);
+
+  const adaNameRef = fire.database().ref('users/ada/name');
+  adaNameRef.child('first').set('Ada');
+  adaNameRef.child('last').set('Lovelace');
+
+  fire.database().ref('messages').push(message);
+
+  updateMess('');
+}
+
+function firePull() {
+  fire
+    .database()
+    .ref('messages')
+    .get()
+    .then((res) => res.toJSON())
+    .then((resJSON) => console.log(resJSON));
+
+  fire
+    .database()
+    .ref('users')
+    .get()
+    .then((res) => res.toJSON())
+    .then((resJSON) => console.log(resJSON));
+}
